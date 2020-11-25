@@ -32,7 +32,8 @@ class Calculator() {
                     sNumber = values[1]
                     division(fNumber, sNumber)
                 }
-                else -> {
+
+                else ->  {
                     println("invalid operator")
                 }
             }
@@ -42,10 +43,10 @@ class Calculator() {
     }
 
     private fun subtraction(firstNumber: String, secondNumber: String) {
-        println(firstNumber.toFloat() - secondNumber.toFloat())
+        println("Subtraction: ${firstNumber.toFloat() - secondNumber.toFloat()}")
     }
     private fun division(firstNumber: String,secondNumber: String){
-        println(firstNumber.toFloat()/secondNumber.toFloat())
+        println("Division: ${firstNumber.toFloat()/secondNumber.toFloat()}")
     }
 
     private fun addition(firstNumber: String, secondNumber: String) {
@@ -54,7 +55,7 @@ class Calculator() {
     }
 
     private fun multiplication(firstNumber: String, secondNumber: String) {
-        println(firstNumber.toFloat() * secondNumber.toFloat())
+        println("Multiplication: ${firstNumber.toFloat() * secondNumber.toFloat()}")
     }
 }
 
